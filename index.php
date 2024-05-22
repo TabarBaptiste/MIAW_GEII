@@ -63,37 +63,41 @@ if ($test) {
     <div class="content">
         <?php 
         // Séléction de la page à charger selon l'URL
-        switch ($_GET['page']) {
-            case 'connexion':
-                require_once("view/connexion.php");
-                break;
-            case 'departement':
-                require_once("view/departement.php");
-                break;
-            case 'espace_enseignant':
-                require_once("view/espace_enseignant.php");
-                break;
-            case 'espace_entreprise':
-                require_once("view/espace_entreprise.php");
-                break;
-            case 'espace_etudiant':
-                require_once("view/espace_etudiant.php");
-                break;
-            case 'form_alternance':
-                require_once("view/form_alternance.php");
-                break;
-            case 'form_tuteures':
-                require_once("view/form_tuteures.php");
-                break;
-            case 'inscription':
-                require_once("view/inscription.php");
-                break;
-            case 'licences':
-                require_once("view/licences.php");
-                break;
-            default:
-                require_once("view/accueil.html");
-                break;
+        if (!isset($_GET['page'])) {
+            require_once("view/accueil.html");
+        } else {
+            switch ($_GET['page']) {
+                case 'connexion':
+                    require_once("view/connexion.php");
+                    break;
+                case 'departement':
+                    require_once("view/departement.php");
+                    break;
+                case 'espace_enseignant':
+                    require_once("view/espace_enseignant.php");
+                    break;
+                case 'espace_entreprise':
+                    require_once("view/espace_entreprise.php");
+                    break;
+                case 'espace_etudiant':
+                    require_once("view/espace_etudiant.php");
+                    break;
+                case 'form_alternance':
+                    require_once("view/form_alternance.php");
+                    break;
+                case 'form_tuteures':
+                    require_once("view/form_tuteures.php");
+                    break;
+                case 'inscription':
+                    require_once("view/inscription.php");
+                    break;
+                case 'licences':
+                    require_once("view/licences.php");
+                    break;
+                default:
+                    require_once("view/accueil.html");
+                    break;
+            }
         }
         ?>
     </div>
