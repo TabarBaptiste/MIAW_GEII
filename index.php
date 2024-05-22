@@ -1,5 +1,5 @@
 <?php 
-$test = true;
+$test = false;
 
 if ($test) {
     $user['name'] = "VOLLE Nicolas";

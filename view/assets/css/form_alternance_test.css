@@ -1,49 +1,7 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #d9d9d9;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-}
-
-.navbar_link {
-    padding: 0 10px;
-}
-
-img#logo {
-    width: 100px;
-}
-
-.h1, footer {
-    width: 100%;
-    padding: 0.8%;
-    background-color: #015291;
-    font-weight: bolder;
-    color: white;
-    text-align: center;
-}
-
-iframe {
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-}
-
-/* Style de l'icône par défaut */
-.navbar_link i {
-    transition: transform 0.3s ease; /* Animation de transition pour un effet plus fluide */
-}
-
-/* Lorsque survolé, l'icône change */
-.navbar_link:hover i {
-    transform: rotate(180deg); /* Fait pivoter l'icône de 180 degrés */
-}
-
-
-/* **** FORMULAIRE_ALTERNANCE début **** */
 .formulaire_alternance h3 {
     text-align: center;
 }
@@ -55,9 +13,11 @@ iframe {
 
 .formulaire_alternance .card {
     background-image: url("../img/Logo-GEII/logo-medium_trans.png");
+    
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 35%;
+
     background-color: #ffffff;
     border-radius: 20px;
 }
@@ -78,9 +38,9 @@ iframe {
 }
 .formulaire_alternance .form-control {
     border: 1px solid rgb(0, 0, 0, 0.5);
+    background-color: transparent;
 }
 
 .formulaire_alternance textarea.form-control {
     max-height: calc(1.5em + .75rem + calc(var(--bs-border-width)* 258));
 }
-/* **** FORMULAIRE_ALTERNANCE fin **** */
