@@ -50,8 +50,12 @@ iframe {
 /**
 * espace_etudiant.php->Calendrier 
 */
-.calendar {border-radius: 10%;}
-.calendar ul {list-style-type: none;}
+.calendar {margin: 10px;}
+
+.calendar ul {
+  list-style-type: none;
+  border-radius: 0 0 10px 10px;
+}
 
 .month {
   padding: 20px 25px;
@@ -85,7 +89,7 @@ iframe {
 .weekdays {
   margin: 0;
   padding: 10px 0;
-  background-color:#ddd;
+  background-color:#c4d0ff;
 }
 
 .weekdays li {
