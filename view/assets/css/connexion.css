@@ -2,17 +2,17 @@ body {
     background-color: #d9d9d9;
 }
 
-.formulaire_alternance h3 {
+.connexion h3 {
     text-align: center;
     margin-bottom: 3%;
 }
 
-.formulaire_alternance .container {
+.connexion .container {
     padding: 0 25% 0 25%;
     margin-top: 45px !important;
 }
 
-.formulaire_alternance .card {
+.connexion .card {
     background-image: url("../img/Logo-GEII/logo-medium_trans.png");
 
     background-position: center;
@@ -23,29 +23,29 @@ body {
     border-radius: 20px;
 }
 
-.formulaire_alternance .btn-custom {
+.connexion .btn-custom {
     background-color: #015291;
     color: #ffffff !important;
     width: 100% !important;
 }
 
-.formulaire_alternance .btn-custom:hover {
+.connexion .btn-custom:hover {
     background-color: #00477e !important;
 
 }
 
-.formulaire_alternance .form-label,
+.connexion .form-label,
 .form-control,
 .btn {
     color: #000000;
 }
 
-.formulaire_alternance .form-control {
+.connexion .form-control {
     border: 1px solid rgb(0, 0, 0, 0.5);
     background-color: transparent;
 }
 
-.formulaire_alternance textarea.form-control {
+.connexion textarea.form-control {
     max-height: calc(1.5em + .75rem + calc(var(--bs-border-width)* 258));
 }
 
@@ -60,7 +60,7 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 990px) {
-    .formulaire_alternance .container {
+    .connexion .container {
         padding: 0 5% 0 5%;
     }
 }
