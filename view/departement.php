@@ -28,15 +28,17 @@
         <h3>Organisation de l’enseignement et choix pédagogiques</h3>
         <p>L’enseignement universitaire est organisé en Cours Magistraux (promotion entière), Travaux Dirigés (groupe de 24 étudiants) et Travaux Pratiques (groupe de 12 étudiants). Nous faisons le choix, en première année, de dispenser les enseignements pour moitié en groupes de TD et pour moitié en groupes de TP. Quelques cours magistraux sont introduits en deuxième et troisième année.</p>
         <p>Les 2000 heures de formation encadrée, complétées par les 600 heures de projets tuteurés et 22 à 26 semaines de stage, sont dispensées sur une durée de 6 semestres et représentent environ 33 heures de formation par semaine pour les étudiants.</p>
-        </h3>
     </div>
     <div class="col-md-2"></div>
+    <hr/>
     <div class="col-md-2"></div>
     <div class="col-xs-12 col-md-8">
         <h2>Spécificité du BUT GEII</h2>
-        <p>Spécificité du BUT GEII</p>
+        <p>En trois ans après le bac, le BUT offre une formation universitaire qui mêle théorie et pratique, avec un accent mis sur la professionnalisation pour une insertion professionnelle rapide après une professionnalisation croissante au fil des trois années, tout en garantissant un niveau scientifique suffisant afin de continuer des études pour ceux qui le souhaitent.</p>
+        <p>Le titulaire du BUT spécialité GEII est capable de mettre en place et gérer des installations électriques, de concevoir, réaliser, programmer et maintenir des cartes électroniques fixes ou embarquées (automobile, avionique, robotique, etc.), d’automatiser et de contrôler des processus industriels. Les diplômés pourront aussi gérer et maintenir des réseaux informatiques industriels, analyser et développer des systèmes de traitement et de transmission de l’information.</p>
     </div>
     <div class="col-md-2"></div>
+    <hr/>
     <div class="col-md-2"></div>
     <div class="col-xs-12 col-md-8">
         <h2>Formation en Alternance</h2>
@@ -46,20 +48,28 @@
         <p>Les droits d’inscriptions sont pris en charge par le CFA EVE.</p>
     </div>
     <div class="col-md-2"></div>
+    <hr/>
     <div class="col-md-2"></div>
     <div class="col-xs-12 col-md-8">
         <h2>Lieu de formation</h2>
-        <p>
-            <img src="view\assets\img\site_evry_le_pelvoux.jpg" alt="Site du Pelvoux" class="img-fluid">
-            <div>
-                UFR du Pelvoux<br/>
-                36 rue du Pelvoux<br/>
-                ZI de la Petite Montagne Nord<br/>
-                91080 Courcouronnes
+        <div class="row">
+            <div class="col-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.8212565419535!2d2.425670776881248!3d48.61326461792505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5dfb5657bf1d7%3A0xafca9feb9a7a91e5!2sIUT%20%C3%89vry%20G%C3%A9nie%20%C3%89lectrique%20et%20Informatique%20Industrielle%20(GEII)!5e0!3m2!1sfr!2sfr!4v1716374311106!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <div class="col-6">
+                <img src="view\assets\img\site_evry_le_pelvoux.jpg" alt="Site du Pelvoux" class="img-fluid" style="box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5); border-radius: 10px;">
+                <p class="lead text-center m-3">
+                    UFR du Pelvoux<br/>
+                    36 rue du Pelvoux<br/>
+                    ZI de la Petite Montagne Nord<br/>
+                    91080 Courcouronnes
+                </p>
+            </div>
+        </div>
         </p>
     </div>
     <div class="col-md-2"></div>
+    <hr/>
     <div class="col-md-2"></div>
     <div class="col-xs-12 col-md-8">
         <h2>Après le BUT GEII</h2>

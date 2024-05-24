@@ -1,5 +1,5 @@
 <?php 
-$test = false;
+$test = true;
 
 if ($test) {
     $user['name'] = "VOLLE Nicolas";
@@ -38,20 +38,19 @@ if ($test) {
                     case 'etudiant':
                         // require_once("view/navbar/navbar_etudiant.php");
                         echo "
-                        <a class=\"navbar_link\" href=\"index.php?page=edt\">Emploi du temps</a>
-                        <a class=\"navbar_link\" href=\"index.php?page=notes\">Notes</a>
+                        <a class=\"navbar_link\" href=\"index.php?page=espace_etudiant\">Mon espace étudiant</a>
                         ";
                         break;
                     case 'enseignant':
                         // require_once("view/navbar/navbar_enseignant.php");
                         echo "
-                        <a class=\"navbar_link\" href=\"index.php?page=notes\">Notes</a>
+                        <a class=\"navbar_link\" href=\"index.php?page=espace_enseignant\">Mon espace enseignant</a>
                         ";
                         break;
                     case 'entreprise':
                         // require_once("view/navbar/navbar_entreprise.php");
                         echo "
-                        <a class=\"navbar_link\" href=\"index.php?page=projet_tutore\">Projets tutorés</a>
+                        <a class=\"navbar_link\" href=\"index.php?page=espace_entreprise\">Mon espace entreprise</a>
                         ";
                         break;
                 }
@@ -62,7 +61,7 @@ if ($test) {
     </div>
     <div class="content">
         <?php 
-        // Séléction de la page à charger selon l'URL
+        // Sélection de la page à charger selon l'URL
         if (!isset($_GET['page'])) {
             require_once("view/accueil.html");
         } else {
