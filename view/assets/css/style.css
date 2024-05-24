@@ -18,7 +18,8 @@ img#logo {
     width: 100px;
 }
 
-.h1, footer {
+.h1,
+footer {
     width: 100%;
     padding: 0.8%;
     background-color: #015291;
@@ -34,10 +35,82 @@ iframe {
 
 /* Style de l'icône par défaut */
 .navbar_link i {
-    transition: transform 0.3s ease; /* Animation de transition pour un effet plus fluide */
+    transition: transform 0.3s ease;
+    /* Animation de transition pour un effet plus fluide */
 }
 
 /* Lorsque survolé, l'icône change */
 .navbar_link:hover i {
-    transform: rotate(180deg); /* Fait pivoter l'icône de 180 degrés */
+    transform: rotate(180deg);
+    /* Fait pivoter l'icône de 180 degrés */
 }
+
+/* ***** CONNEXION.PHP (début) ***** */
+body {
+    background-color: #d9d9d9;
+}
+
+.connexion h3 {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.connexion .container {
+    padding: 0 25% 0 25%;
+    margin-top: 45px !important;
+}
+
+.connexion .card {
+    background-image: url("../img/Logo-GEII/logo-medium_trans.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35%;
+
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.connexion .btn-custom {
+    background-color: #015291;
+    color: #ffffff !important;
+    width: 100% !important;
+}
+
+.connexion .btn-custom:hover {
+    background-color: #00477e !important;
+
+}
+
+.connexion .form-label,
+.form-control,
+.btn {
+    color: #000000;
+}
+
+.connexion .form-control {
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    background-color: transparent;
+}
+
+.connexion textarea.form-control {
+    max-height: calc(1.5em + .75rem + calc(var(--bs-border-width)* 258));
+}
+
+.bas {
+    text-align: center;
+    margin-top: 3%;
+}
+
+input[type="checkbox"] {
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+@media only screen and (max-width: 990px) {
+    .connexion .container {
+        padding: 0 5% 0 5%;
+    }
+}
+
+/* ***** CONNEXION.PHP (fin) ***** */
