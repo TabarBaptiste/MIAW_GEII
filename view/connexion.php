@@ -7,8 +7,7 @@
                 <div class="mb-3">
                     <label for="mail" class="form-label">Adresse e-mail</label>
                     <i class="fa-solid fa-envelope"></i><input type="text" name="mail" id="mail"
-                        placeholder="adresse@mail.fr" class="form-control" required
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        placeholder="adresse@mail.fr" class="form-control" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                 </div>
                 <div class="mb-3">
                     <label for="motdepasse" class="form-label">Mot de passe</label>
