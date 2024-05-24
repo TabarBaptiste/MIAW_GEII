@@ -27,78 +27,96 @@
         </div>
         <?php endif; ?>
         <div class="row">
+            <div class="col-12">
+                <h3 class="h3-inscription">Informations</h3>
+            </div>
+        </div>
+        <div class="row">
             <div class="col">
+                <label for="raison_sociale" class="label-inscription">Raison Sociale</label>
                 <div class="input-group mb-3">
                     <input type="text"
                            class="form-control"
-                           placeholder="Raison Sociale"
+                           placeholder="Ex : Capegemini"
                            name="raison_sociale"
                            required>
                 </div>
             </div>
             <div class="col">
+                <label for="siret" class="label-inscription">N° Siret</label>
                 <div class="input-group mb-3">
                     <input type="text"
                            pattern="[0-9]{1,14}"
                            class="form-control"
                            minlength="14"
                            maxlength="14"
-                           placeholder="N° Siret"
+                           placeholder="Ex : 21863715317888"
                            name="siret"
                            required>
                 </div>
             </div>
         </div>
         <div class="row">
+            <div class="col-12">
+                <h3 class="h3-inscription">Adresse</h3>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-1">
+                <label for="numero_voie" class="label-inscription">Numéro</label>
                 <div class="input-group mb-3">
                     <input type="text"
                            class="form-control"
-                           placeholder="Numéro voie"
+                           placeholder="Ex : 2"
                            name="numero_voie"
                            >
                 </div>
             </div>
             <div class="col-1">
+                <label for="indice_voie" class="label-inscription">Indice Voie</label>
                 <div class="input-group mb-3">
                     <input type="text"
                            class="form-control"
-                           placeholder="indice voie"
+                           placeholder="Ex : bis"
                            name="indice_voie">
                 </div>
             </div>
             <div class="col-2">
+                <label for="type_voie" class="label-inscription">Type de Voie</label>
                 <div class="input-group mb-3">
                     <input type="text"
                            class="form-control"
-                           placeholder="Type de voie"
+                           placeholder="Ex : rue"
                            name="type_voie"
-                           value="rue">
+                           >
                 </div>
             </div>
             <div class="col-4">
+                <label for="libelle_voie" class="label-inscription">Libellé Voie</label>
                 <div class="input-group mb-3">
                     <input type="text"
                            class="form-control"
-                           placeholder="Libellé voie"
+                           placeholder="Ex : de la Paix"
                            name="libelle_voie"
                            required>
                 </div>
             </div>
             <div class="col-2">
+                <label for="ville" class="label-inscription">Ville</label>
                 <div class="input-group mb-3">
                     <input type="text"
                            class="form-control"
-                           placeholder="Ville"
+                           placeholder="Ex : Paris"
                            name="ville"
                            required>
                 </div>
             </div>
             <div class="col-2">
+                <label for="departement" class="label-inscription">Département</label>
                 <div class="input-group mb-3">
                     <input type="text"
                            class="form-control"
-                           placeholder="Département"
+                           placeholder="Ex : 75001"
                            name="departement"
                            maxlength="5"
                            required>
@@ -106,16 +124,23 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-12">
+                <h3 class="h3-inscription">Identifiant</h3>
+            </div>
+        </div>
+        <div class="row">
             <div class="col">
+                <label for="mail" class="label-inscription">Adresse mail</label>
                 <div class="input-group mb-3">
                     <input type="email"
                            class="form-control"
-                           placeholder="Adresse mail"
+                           placeholder="titi@capegemini.com"
                            name="mail"
                            required>
                 </div>
             </div>
             <div class="col">
+                <label for="mdp" class="label-inscription">Mot de passe</label>
                 <div class="input-group mb-3">
                     <input type="password"
                            class="form-control"
@@ -127,15 +152,17 @@
         </div>
         <div class="row">
             <div class="col">
+                <label for="re_mail" class="label-inscription">Confirmation Mail</label>
                 <div class="input-group mb-3">
                     <input type="email"
                            class="form-control"
-                           placeholder="Confirmation adresse mail"
+                           placeholder="titi@capegemini.com"
                            name="re_mail"
                            required>
                 </div>
             </div>
             <div class="col">
+                <label for="re_mdp" class="label-inscription">Confirmation Mot de passe</label>
                 <div class="input-group mb-3">
                     <input type="password"
                            class="form-control"
