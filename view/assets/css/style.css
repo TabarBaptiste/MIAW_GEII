@@ -274,29 +274,3 @@ input[type="checkbox"] {
     font-size: 18px;
     font-weight: bold;
 }
-
-/*
- *
- * Inscription.php
- *
- */
-.container-inscription {
-    background-color: #FFF;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.icons-inscription {
-    font-style: normal;
-    margin-right: 10px;
-}
-.label-inscription {
-    float: left;
-    font-size: 15px;
-    font-weight: bold;
-}
-.h3-inscription {
-    float: left;
-    font-size: 18px;
-    font-weight: bold;
-}
