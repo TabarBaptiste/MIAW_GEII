@@ -1,66 +1,34 @@
 <!-- TODO : connexion à la BDD pour récupérer les supports de cours -->
 <h2>Supports de cours</h2>
-<div class="accordion" id="accordionExample">
+<div class="accordion" id="accordionCourseMaterials">
     <?php 
-    if (isset($supports)) {
+        if (!(isset($supports)) && $test == true) {
+            echo '<div class="alert alert-primary text-center" role="alert">Valeurs de test</div>';
+            $supports['1']['id'] = "web";
+            $supports['1']['matiere'] = "Web";
+            $supports['1']['info'] = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repellendus quis quibusdam at ad laudantium in eaque soluta sit consequatur";
+            $supports['2']['id'] = "cms";
+            $supports['2']['matiere'] = "CMS";
+            $supports['2']['info'] = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+            $supports['3']['id'] = "pt";
+            $supports['3']['matiere'] = "Projet tutoré";
+            $supports['3']['info'] = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+        }
         foreach ($supports as $support) {
             echo '
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    '.$support['matiere'].'
-                </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">';
-                    foreach ($support['doc'] as $doc) {
-                        echo $doc;
-                    }
-            echo '</div>
-                </div>
-            </div>';
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#'.$support['id'].'" aria-expanded="false" aria-controls="'.$support['id'].'">
+            '.$support['matiere'].'
+            </button>
+            </h2>
+            <div id="'.$support['id'].'" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            '.$support['info'].'
+            </div>
+            </div>
+            ';
         }
-    } else {
-        echo '
-        
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Matière #1
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the first item\'s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It\'s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Matière #2
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item\'s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It\'s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Matière #3
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item\'s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It\'s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        ';
-    }
     ?>
     
 </div>
