@@ -39,17 +39,17 @@
             </div>
             <div class="col-md-4 logo">
                 <div class="logo-gauche">
-                    <img src="C:\laragon\www\MIAW_GEII\view\assets\img\logo_footer.png" alt="Logo">
+                    <img src="assets\img\logo_footer.png" alt="Logo">
                 </div>
             </div>
         </div>
     </div>
     <div class="footer-bas row mt-3">
         <div class="col-md-6 footer_bas_gauche">
-            <p>Copyright © 2024 IUT d'Évry Val d'Essonne – Propulsé par Customify.</p>
+            <p>Copyright © 2024 IUT d'Évry Val d'Essonne.</p>
         </div>
-        <div class="col-md-6 footer_bas_droite text-right">
-            <p>Contact – Mentions légales</p>
+        <div class="col-md-6 footer_bas_droite text-center">
+            <p>Proposé par BOUTTET | VOLLE | MIGUEL | TABAR LABONNE</p>
         </div>
     </div>
 </div>

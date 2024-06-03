@@ -21,6 +21,7 @@ if ($test) {
         </script>
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="view/assets/css/style.css">
+    <link rel="shortcut icon" href="view\assets\img\Logo-GEII\logo-medium.png" type="image/x-icon">
 </head>
 <div class="container-fluid">
     <div class="header">
