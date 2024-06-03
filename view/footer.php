@@ -39,7 +39,7 @@
             </div>
             <div class="col-md-4 logo">
                 <div class="logo-gauche">
-                    <img src="assets\img\logo_footer.png" alt="Logo">
+                    <img src="view\assets\img\logo_footer.png" alt="Logo">
                 </div>
             </div>
         </div>

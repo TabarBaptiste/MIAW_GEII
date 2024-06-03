@@ -241,6 +241,10 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 
+.footer .centre a:hover {
+  text-decoration: underline;
+}
+
 .footer .footer-bas {
   padding: 1% 3%;
   font-size: 14px !important;
