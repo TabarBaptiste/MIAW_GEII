@@ -15,7 +15,7 @@ $db->connect_db($host, $user, $passwd, $base);
 $res = $db->connection_user($mail, $password);
 
 if($res){
-    header('Refresh: 0; URL=../index.php?page=accueil');
+    header('Refresh: 0; URL=../index.php');
 }else{
     echo "Identifiant ou mot de passe incorrect";
 }
