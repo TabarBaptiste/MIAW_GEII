@@ -7,14 +7,11 @@ if ($test) {
     $user['classe'] = "LP-MIAW";
 }
 
-<<<<<<< HEAD
 session_start();
-=======
 if (isset($_FILES)) {
     require_once("controller\uploadFiles.php");
 }
 
->>>>>>> main
 ?>
 
 <!DOCTYPE html>
