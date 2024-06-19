@@ -49,7 +49,7 @@
             <p>Copyright © 2024 IUT d'Évry Val d'Essonne.</p>
         </div>
         <div class="col-md-6 footer_bas_droite text-center">
-            <p>Proposé par BOUTTET | VOLLE | MIGUEL | TABAR LABONNE</p>
+            <p>Proposé par BOUTET | VOLLE | MIGUEL | TABAR LABONNE</p>
         </div>
     </div>
 </div>
