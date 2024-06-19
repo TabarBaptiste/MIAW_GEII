@@ -5,7 +5,7 @@
     <div class="container my-5">
         <h3><i class="fa-solid fa-user"></i> Se connecter</h3>
         <div class="card p-4">
-            <form>
+            <form method="post" action="./controller/connexion.php">
                 <div class="mb-3">
                     <label for="mail" class="form-label">Adresse e-mail</label>
                     <i class="fa-solid fa-envelope"></i><input type="text" name="mail" id="mail"
