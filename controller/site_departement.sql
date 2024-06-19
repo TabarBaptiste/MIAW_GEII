@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : mer. 19 juin 2024 à 14:08
+-- Généré le : mer. 19 juin 2024 à 15:19
 -- Version du serveur : 11.4.2-MariaDB
 -- Version de PHP : 8.3.8
 
@@ -223,6 +223,12 @@ CREATE TABLE `utilisateurs` (
 --
 -- Déchargement des données de la table `utilisateurs`
 --
+
+INSERT INTO `utilisateurs` (`id_utilisateur`, `role`, `mot_de_passe`, `nom`, `prenom`, `siret`, `numero_voie`, `indice_voie`, `type_voie`, `libelle_voie`, `ville`, `departement`) VALUES
+('admin@mail.fr', 1, '$2y$10$4FhKVVgQEUVEv1GpYPLPEOx4uV/taZkXc36nBM.yPPquAVNVMqKeW', 'Admin', NULL, NULL, 1234, NULL, 'RUE', 'GRANDE', 'FONTAINEBLEAU', '77300'),
+('golgot@mail.fr', 3, '$2y$10$torcOadnEHCgS4JwAcRuXOw4TV5OQ7eew0OheFJLY13sOLHutJX/G', 'MALUS', 'Gauthier', NULL, 2, NULL, 'RUE', 'KELLERMANN', 'ROUBAIX', '59100'),
+('ovh@mail.fr', 4, '$2y$10$6WNXBDMb1wblaNZ/MD54n.urI7tqGfga12S1WdcLktX5ZlVzd/Ty2', 'OVH', NULL, '43286247200011', NULL, NULL, NULL, 'ZONE INDUSTRIELLE', 'BREUIL LE SEC', '60840'),
+('titi@mail.fr', 2, '$2y$10$o23ix5KInEQMy8R29hENO.HnBUysiVyCAOk0vz1O66.0IZBHy5JkO', 'DUPONT', 'Titi', NULL, 24, NULL, 'RUE', 'AUGUSTE CHABRIERES', 'PARIS', '75015');
 
 --
 -- Index pour les tables déchargées
