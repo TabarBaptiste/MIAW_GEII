@@ -19,7 +19,7 @@ if ($test) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
-    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/760e84e32f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="view/assets/css/style.css">
     <link rel="shortcut icon" href="view\assets\img\Logo-GEII\logo-medium.png" type="image/x-icon">
 </head>
