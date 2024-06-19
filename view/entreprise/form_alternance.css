@@ -1,0 +1,46 @@
+body {
+    background-color: #d9d9d9;
+}
+
+.formulaire_alternance h3 {
+    text-align: center;
+}
+
+.formulaire_alternance .container {
+    padding: 0 7% 0 7%;
+    margin-top: 20px !important;
+}
+
+.formulaire_alternance .card {
+    background-image: url("../img/Logo-GEII/logo-medium_trans.png");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35%;
+
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.formulaire_alternance .btn-custom {
+    background-color: #015291;
+    color: #ffffff !important;
+    width: 100% !important;
+}
+
+.formulaire_alternance .btn-custom:hover{
+    background-color: #00477e !important;
+
+}
+
+.formulaire_alternance .form-label, .form-control, .btn {
+    color: #000000;
+}
+.formulaire_alternance .form-control {
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    background-color: transparent;
+}
+
+.formulaire_alternance textarea.form-control {
+    max-height: calc(1.5em + .75rem + calc(var(--bs-border-width)* 258));
+}

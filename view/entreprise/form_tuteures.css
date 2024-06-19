@@ -1,0 +1,18 @@
+/*le background de tout l'intranet */
+body {
+   background-color: #D9D9D9 !important;
+}
+
+#logo {
+  width: 100px;
+}
+/*intranet formulaire projet tutoré*/
+
+ 
+ .custom-textarea {
+   height: 200px; 
+ }
+ 
+ .border-dashed {
+   border-style: dashed;
+ }
