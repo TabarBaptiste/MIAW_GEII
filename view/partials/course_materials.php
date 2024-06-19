@@ -17,15 +17,14 @@
         foreach ($supports as $support) {
             echo '
             <div class="accordion-item">
-            <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#'.$support['id'].'" aria-expanded="false" aria-controls="'.$support['id'].'">
-            '.$support['matiere'].'
-            </button>
-            </h2>
-            <div id="'.$support['id'].'" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-            '.$support['info'].'
-            </div>
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#'.$support['id'].'" aria-expanded="false" aria-controls="'.$support['id'].'">
+                        '.$support['matiere'].'
+                    </button>
+                </h2>
+                <div id="'.$support['id'].'" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">'.$support['info'].'</div>
+                </div>
             </div>
             ';
         }
