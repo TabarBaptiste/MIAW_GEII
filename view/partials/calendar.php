@@ -44,14 +44,17 @@
     $daysThisMonth = intval(date('t'));
     // recuperation du premier jour du mois pour construire le calendrier
     $firstDayThisMonth = intval(date("w", mktime(0, 0, 0, $date['mon'], 1, $date['year'])));
+
+    // récupération de la classe si élève
+    if (isset($user['classe']) && !isset($classe)) {
+        $classe = $user['classe'];
+    }
 ?>
 
 <h2>Emploi du temps</h2>
 <div class="calendar">
     <div class="month">
         <ul>
-            <li class="prev">&#10094;</li>
-            <li class="next">&#10095;</li>
             <li><?= $date['mois']; ?><br><span style="font-size:18px"><?= $date['year']; ?></span></li>
         </ul>
     </div>
@@ -85,4 +88,16 @@
         }
         ?>
     </ul>
+    <?php 
+        if ($test == true) {
+            echo '<div class="alert alert-primary text-center" role="alert">Valeurs de test</div>';
+            echo '<iframe src="view\assets\docs\edt\EDT-test.pdf" frameborder="0" height="500em" width="100%"></iframe>';
+        } else {
+            if (file_exists("view/assets/docs/edt/EDT-".$classe.".pdf")) {
+                echo '<iframe src="view\assets\docs\edt\EDT-'.$classe.'.pdf" frameborder="0" height="500em" width="100%"></iframe>';
+            } else {
+                echo "Pas d'emploi du temps pour cette classe";
+            }
+        }
+    ?>
 </div>
