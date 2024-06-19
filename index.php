@@ -8,6 +8,7 @@ if ($test) {
 }
 
 session_start();
+
 if (isset($_FILES)) {
     require_once("controller\uploadFiles.php");
 }
