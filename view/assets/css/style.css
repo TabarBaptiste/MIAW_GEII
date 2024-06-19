@@ -439,3 +439,21 @@ input[type="checkbox"] {
 }
 
 /* ***** licences.php (fin) ***** */
+
+/* ***** formulaire tuteurs.php (début) ***** */
+.form_tuteures #logo {
+  width: 100px;
+}
+
+.form_tuteures .custom-textarea {
+  height: 200px;
+}
+
+.form_tuteures .border-dashed {
+  border-style: dashed;
+}
+
+.form_tuteures .mb-2 {
+  color: white;
+}
+/* ***** formulaire tuteurs.php (fin) ***** */
