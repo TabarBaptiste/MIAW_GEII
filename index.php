@@ -4,9 +4,17 @@ $test = true;
 if ($test) {
     $user['name'] = "VOLLE Nicolas";
     $user['role'] = "etudiant";
+    $user['classe'] = "LP-MIAW";
 }
 
+<<<<<<< HEAD
 session_start();
+=======
+if (isset($_FILES)) {
+    require_once("controller\uploadFiles.php");
+}
+
+>>>>>>> main
 ?>
 
 <!DOCTYPE html>

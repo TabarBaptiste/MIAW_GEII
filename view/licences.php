@@ -25,7 +25,7 @@
                     <input type="button" value="Déposer une candidature en ligne">
                 </div>
                 <div class="image mb-4">
-                    <img src="./assets/img/Reseau-informatique-connexion.jpeg" alt="site_evry_le_pelvoux">
+                    <img src="./view/assets/img/Reseau-informatique-connexion.jpeg" alt="site_evry_le_pelvoux">
                 </div>
                 <div class="licence mb-4">
                     <h2>Licence Pro Métiers de l’informatique : applications web</h2>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="image mb-4">
-                    <img src="./assets/img/sgbd_datascientest.png" alt="site_evry_le_pelvoux">
+                    <img src="./view/assets/img/sgbd_datascientest.png" alt="site_evry_le_pelvoux">
                 </div>
                 <div class="licence mb-4">
                     <h2>Licence Pro Métiers de l'Informatique : Systèmes d'Information et Gestion de Données</h2>
@@ -154,7 +154,7 @@
                 <div class="info mb-3">
 
                     <h6><i class="bi bi-geo-alt fa-2x"></i> LOCALISATION</h6>
-                    <img src="./assets/img/site_evry_le_pelvoux.jpg" alt="site_evry_le_pelvoux">
+                    <img src="./view/assets/img/site_evry_le_pelvoux.jpg" alt="site_evry_le_pelvoux">
                     <p>36 rue du Pelvoux</p>
                     <p>ZI de la Petite Montagne Nord</p>
                     <p>91080 Courcouronnes</p>

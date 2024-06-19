@@ -338,7 +338,7 @@ input[type="checkbox"] {
 
 .formulaire_alternance .card {
   background-image: url("../img/Logo-GEII/logo-medium_trans.png");
-  
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: 35%;
@@ -353,14 +353,17 @@ input[type="checkbox"] {
   width: 100% !important;
 }
 
-.formulaire_alternance .btn-custom:hover{
+.formulaire_alternance .btn-custom:hover {
   background-color: #00477e !important;
 
 }
 
-.formulaire_alternance .form-label, .form-control, .btn {
+.formulaire_alternance .form-label,
+.form-control,
+.btn {
   color: #000000;
 }
+
 .formulaire_alternance .form-control {
   border: 1px solid rgb(0, 0, 0, 0.5);
   background-color: transparent;
@@ -369,4 +372,131 @@ input[type="checkbox"] {
 .formulaire_alternance textarea.form-control {
   max-height: calc(1.5em + .75rem + calc(var(--bs-border-width)* 258));
 }
+
 /* ***** formulaire alternance.php (fin) ***** */
+
+/* ***** licences.php (fin) ***** */
+.licences .gauche {
+  padding: 0 10px 10px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  /* width: 66%; */
+}
+
+.licences .droite {
+  /* background-color: #d9d9d9; */
+  padding: 0 20px;
+  border-radius: 5px;
+  color: #FFF;
+  width: 23%;
+}
+
+.licences {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.licences h1 {
+  color: #004792;
+  text-align: center;
+}
+
+.licences .candidature {
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.licences .candidature h4,
+.licence h2 {
+  color: #004792;
+}
+
+.licences .candidature p,
+.licences p,
+.licences .presentation p,
+.licences .info p {
+  color: black;
+  margin-bottom: 0;
+}
+
+.licences .candidature p {
+  margin-bottom: 1%;
+}
+
+.licences .candidature input[type="button"] {
+  background-color: #FC9100;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.licences .info h6 {
+  color: #004792;
+  font-size: 89%;
+}
+
+.licences .info a {
+  color: #FC9100;
+}
+
+.licences .info a:hover {
+  text-decoration: underline;
+}
+
+.licences .info {
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 5px;
+  color: #FFF;
+}
+
+.licences img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.licences .bi,
+.licences .fa-graduation-cap {
+  color: #004792;
+  font-size: 120%;
+}
+
+.licences .mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.licences .row {
+  justify-content: space-around;
+}
+
+.licences hr {
+  margin: 0.4rem 0;
+}
+
+.licences span {
+  text-decoration: underline;
+}
+
+/* ***** licences.php (fin) ***** */
+
+/* ***** formulaire tuteurs.php (début) ***** */
+.form_tuteures #logo {
+  width: 100px;
+}
+
+.form_tuteures .custom-textarea {
+  height: 200px;
+}
+
+.form_tuteures .border-dashed {
+  border-style: dashed;
+}
+
+.form_tuteures .mb-2 {
+  color: white;
+}
+/* ***** formulaire tuteurs.php (fin) ***** */
