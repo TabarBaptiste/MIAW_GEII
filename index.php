@@ -5,6 +5,8 @@ if ($test) {
     $user['name'] = "VOLLE Nicolas";
     $user['role'] = "etudiant";
 }
+
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -32,33 +34,46 @@ if ($test) {
                         alt="logo Département Génie Electrique et Informatique Industrielle" id="logo">
                 </a>
             </div>
-            <a class="navbar_link" href="index.php?page=departement">Département</a>
-            <?php
-            if (isset($user)) {
-                switch ($user['role']) {
-                    case 'etudiant':
-                        // require_once("view/navbar/navbar_etudiant.php");
-                        echo "
-                        <a class=\"navbar_link\" href=\"index.php?page=espace_etudiant\">Mon espace étudiant</a>
-                        ";
-                        break;
-                    case 'enseignant':
-                        // require_once("view/navbar/navbar_enseignant.php");
-                        echo "
-                        <a class=\"navbar_link\" href=\"index.php?page=espace_enseignant\">Mon espace enseignant</a>
-                        ";
-                        break;
-                    case 'entreprise':
-                        // require_once("view/navbar/navbar_entreprise.php");
-                        echo "
-                        <a class=\"navbar_link\" href=\"index.php?page=espace_entreprise\">Mon espace entreprise</a>
-                        ";
-                        break;
-                }
-            }
-            ?>
-            <p class="navbar_link"><?= isset($user) ? $user['name'] : "NOM Prénom"; ?> <i
-                    class="fas fa-chevron-down"></i></p>
+            <nav>
+                <ul>
+                    <li><a class="navbar_link" href="index.php?page=departement">Département</a></li>
+                    <?php
+                    if (isset($_SESSION['role'])) {
+                        switch ($_SESSION['role']) {
+                            case 'etudiant':
+                                // require_once("view/navbar/navbar_etudiant.php");
+                                echo "
+                                <li><a class=\"navbar_link\" href=\"index.php?page=espace_etudiant\">Mon espace étudiant</a></li>
+                                ";
+                                break;
+                            case 'enseignant':
+                                // require_once("view/navbar/navbar_enseignant.php");
+                                echo "
+                                <li><a class=\"navbar_link\" href=\"index.php?page=espace_enseignant\">Mon espace enseignant</a></li>
+                                ";
+                                break;
+                            case 'entreprise':
+                                // require_once("view/navbar/navbar_entreprise.php");
+                                echo "
+                                <li><a class=\"navbar_link\" href=\"index.php?page=espace_entreprise\">Mon espace entreprise</a></li>
+                                ";
+                                break;
+                        }
+                    }
+                    ?>
+                    <?php if(isset($_SESSION['nom'])): ?>
+                        <li class="deroulant">
+                            <?= $_SESSION['nom'].' '.$_SESSION['prenom']; ?>
+                            <i class="fas fa-chevron-down"></i>
+                            <ul class="sous">
+                                <li><a href="index.php?page=deconnexion">Se déconnecter</a></li>
+                            </ul>
+                        </li>
+                    <?php else: ?>
+                        <li><a href="index.php?page=connexion">Se connecter</a></li>
+                    <?php endif; ?>
+                </ul>
+            </nav>
         </div>
     </div>
     <div class="content">
@@ -95,6 +110,9 @@ if ($test) {
                     break;
                 case 'licences':
                     require_once ("view/licences.php");
+                    break;
+                case 'deconnexion':
+                    require_once ("controller/deconnexion.php");
                     break;
                 default:
                     require_once ("view/accueil.html");

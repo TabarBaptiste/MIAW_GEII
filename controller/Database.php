@@ -24,6 +24,8 @@ class Database{
         $ville = $adresse['ville'];
         $departement = $adresse['departement'];
 
+        $mdp = password_hash($mdp, PASSWORD_BCRYPT);
+
         if($numero_voie != null){$numero_voie = "'$numero_voie'";}else{$numero_voie = 'NULL';}
         if($indice_voie != null){$indice_voie = "'$indice_voie'";}else{$indice_voie = 'NULL';}
         if($type_voie != null){$type_voie = "'$type_voie'";}else{$type_voie = 'NULL';}
@@ -64,5 +66,37 @@ class Database{
         }else{
             echo "Error: " . $query . "<br>" . $this->db->error;
         }
+    }
+
+    public function connection_user($mail, $mdp){
+        $query = "SELECT id_utilisateur, roles.nom AS role, mot_de_passe, utilisateurs.nom, prenom FROM `utilisateurs` INNER JOIN roles ON utilisateurs.role = roles.id_role WHERE id_utilisateur='$mail'; ";
+        $result = $this->db->query($query);
+
+        if($result->num_rows == 1){
+            while($row = $result->fetch_assoc()){
+                $umail = $row['id_utilisateur'];
+                $urole = $row['role'];
+                $umdp = $row['mot_de_passe'];
+                $unom = $row['nom'];
+                $uprenom = $row['prenom'];
+            }
+
+            if($umail == $mail && password_verify($mdp, $umdp)){
+                session_start();
+
+                $_SESSION['mail'] = $umail;
+                $_SESSION['role'] = $urole;
+                $_SESSION['nom'] = $unom;
+                $_SESSION['prenom'] = $uprenom;
+            }else{
+                return false;
+            }
+
+            return true;
+
+        }else{
+            return false;
+        }
+
     }
 }
