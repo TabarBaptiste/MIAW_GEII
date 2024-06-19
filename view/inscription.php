@@ -173,7 +173,7 @@
             </div>
         </div>
         <div class="row">
-            <input type="submit" class="btn btn-primary col" value="S'inscrire"/>
+            <input type="submit" class="btn btn-primary col" value="S'inscrire" style="color: #FFF;"/>
         </div>
     </form>
 </div>
