@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="col-md-6">
                     <div class="row">
                         <h3>Projets Tuteurés</h3>
-                        <a class="btn btn-primary mb-2" href="formulaire_PT.php">Ajouter un projet tutoré</a>
+                        <a class="btn btn-primary mb-2" href="form_tuteures.php">Ajouter un projet tutoré</a>
                     </div>
                     <?php
                     if (!empty($_SESSION['projets'])) {
