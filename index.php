@@ -13,7 +13,7 @@ if ($test) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= isset($page_title) ? $page_title : "Accueil | GEII"; ?></title>
+    <title><?= isset($_POST['page_title']) ? $_POST['page_title'] : "Accueil | GEII"; ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -72,6 +72,7 @@ if ($test) {
                     require_once ("view/connexion.php");
                     break;
                 case 'departement':
+                    $_POST['page_title'] = "Departement";
                     require_once ("view/departement.php");
                     break;
                 case 'espace_enseignant':
