@@ -26,7 +26,7 @@
     <div class="col-md-2"></div>
     <div class="col-md-2"></div>
     <div class="col-xs-12 col-md-8">
-        <!-- Connexion à la BDD pour récupérer et afficher les projets tutorés disponibles -->
+        <!-- Connexion à la BDD pour récupérer et afficher les supports de cours -->
         <?php require_once("view/partials/course_materials.php"); ?>
     </div>
     <div class="col-md-2"></div>
