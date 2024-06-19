@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 // Suppression d'un projet tutoré
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -50,30 +49,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body>
     <div class="container-fluid">
-        <div class="row align-items-center bg-light p-2">
-            <div class="col-2">
-                <img src="view/img/Logo-GEII/logo-medium.png" alt="Logo GEII" class="img-fluid">
-            </div>
-            <div class="col-8 text-center">
-                <h1>Espace Entreprise</h1>
-            </div>
-            <div class="col-2 text-end">
-                <span>Nom entreprise</span>
-                <div class="dropdown d-inline">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="menuButton"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuButton">
-                        <li><button class="dropdown-item" type="button">Déconnecter</button></li>
-                        <li><a class="dropdown-item" href="#">Sous-menu 1</a></li>
-                        <li><a class="dropdown-item" href="#">Sous-menu 2</a></li>
-                        <li><a class="dropdown-item" href="#">Sous-menu 3</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-6">
@@ -108,7 +83,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="col-md-6">
                     <div class="row">
                         <h3>Offres d'alternance</h3>
-                        <a class="btn btn-primary mb-2" href="index.php?page=form_alternance">Ajouter une offre d'alternance</a>
+                        <a class="btn btn-primary mb-2" href="index.php?page=form_alternance">Ajouter une offre
+                            d'alternance</a>
                     </div>
                     <?php
                     if (!empty($_SESSION['offres_alternance'])) {

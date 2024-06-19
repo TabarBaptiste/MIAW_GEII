@@ -5,8 +5,8 @@ $mail = $_POST['mail'];
 $password = $_POST['motdepasse'];
 
 $host = "localhost";
-$user = "site_departement";
-$passwd = "departement";
+$user = "root";
+$passwd = "";
 $base = "site_departement";
 
 $db = new Database();
