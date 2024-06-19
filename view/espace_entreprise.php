@@ -1,3 +1,40 @@
+<?php
+session_start();
+
+// Suppression d'un projet tutoré
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['delete_projet_id'])) {
+        $delete_projet_id = $_POST['delete_projet_id'];
+
+        // Vérifier si le projet existe dans la session
+        if (isset($_SESSION['projets'][$delete_projet_id])) {
+            // Supprimer le projet
+            unset($_SESSION['projets'][$delete_projet_id]);
+
+            // Réindexer le tableau pour éviter les clés manquantes
+            $_SESSION['projets'] = array_values($_SESSION['projets']);
+        }
+    }
+
+    // Suppression d'une offre d'alternance
+    if (isset($_POST['delete_offre_id'])) {
+        $delete_offre_id = $_POST['delete_offre_id'];
+
+        // Vérifier si l'offre existe dans la session
+        if (isset($_SESSION['offres_alternance'][$delete_offre_id])) {
+            // Supprimer l'offre
+            unset($_SESSION['offres_alternance'][$delete_offre_id]);
+
+            // Réindexer le tableau pour éviter les clés manquantes
+            $_SESSION['offres_alternance'] = array_values($_SESSION['offres_alternance']);
+        }
+    }
+
+    // Redirection après la suppression (après avoir traité toutes les suppressions)
+    header('Location: espace_entreprise.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -67,12 +104,56 @@
                         <h3 class="title">Projets Tuteurés</h3>
                         <a class="btn btn-custom mb-2" href="index.php?page=form_tuteures">Ajouter un projet tuteuré</a>
                     </div>
+                    <?php
+                    if (!empty($_SESSION['projets'])) {
+                        foreach ($_SESSION['projets'] as $projet_id => $projet) {
+                            echo "
+            <div class='card mb-4 shadow-sm' style='width: 18rem;'>
+                <div class='card-body'>
+                    <h5 class='card-title'>{$projet['nomProjet']}</h5>
+                    <h6 class='card-subtitle mb-2 text-muted'>{$projet['domaine']}</h6>
+                    <p class='card-text'>{$projet['competences']}</p>
+                    <p class='card-text'>{$projet['description']}</p>
+                    <form action='espace_entreprise.php' method='post'>
+                        <input type='hidden' name='delete_projet_id' value='{$projet_id}'>
+                        <button type='submit' class='btn btn-danger btn-sm'>Supprimer</button>
+                        <a href='form_tuteures.php?edit_id={$projet_id}' class='btn btn-primary btn-sm'>Modifier</a>
+
+                    </form>
+                </div>
+            </div>";
+                        }
+                    } else {
+                        echo "<p>Aucun projet tutoré disponible pour le moment.</p>";
+                    }
+                    ?>
                 </div>
                 <div class="col-md-6 content-item">
                     <div class="row">
                         <h3 class="title">Offres d'alternance</h3>
                         <a class="btn btn-custom mb-2" href="index.php?page=form_alternance">Ajouter une offre d'alternance</a>
                     </div>
+                    <?php
+                    if (!empty($_SESSION['offres_alternance'])) {
+                        foreach ($_SESSION['offres_alternance'] as $offre_id => $offre) {
+                            echo "
+                        <div class='card mb-4 shadow-sm' style='width: 18rem;'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>{$offre['intitule']}</h5>
+                                <h6 class='card-subtitle mb-2 text-muted'>{$offre['entreprise']}</h6>
+                                <p class='card-text'>{$offre['description']}</p>
+                                <form action='espace_entreprise.php' method='post'>
+                                    <input type='hidden' name='delete_offre_id' value='{$offre_id}'>
+                                    <button type='submit' class='btn btn-danger btn-sm'>Supprimer</button>
+                                </form>
+                                <a href='form_alternance.php?edit_id={$offre_id}' class='btn btn-primary btn-sm'>Modifier</a>
+                            </div>
+                        </div>";
+                        }
+                    } else {
+                        echo "<p>Aucune offre d'alternance disponible pour le moment.</p>";
+                    }
+                    ?>
                 </div>
             </div>
         </div>
